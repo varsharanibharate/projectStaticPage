@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionMyProjectsHome">
+        <div class="my-project-home-page">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="software-developer-image " />
+            <h1 class="main-heading">My Projects</h1>
+            <p class="paragraph">These are a few of my static website projects that I have developed using HTML, CSS and Bootstrap</p>
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="image" onclick="display('sectionAdvancedTechnologyPage')" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="image" onclick="display('sectionDiwaliPage')" />
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png" class="image" onclick="display('sectionMoviePage')" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="image" onclick="display('sectionNewsPaperPage')" />
+        </div>
+    </div>
+
+    <div id="sectionAdvancedTechnologyPage">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="card-container">
+                <h1 class="card-heading">Advanced Technologies</h1>
+                <p class="card-paragraph">Machinery and equipment developed from the application of scientific knowledge</p>
+                <button class="learn-more-button">Learn more</button>
+                <button class="save-draft-button">Save Draft</button>
+                <button class="btn btn-primary" onclick="display('sectionMyProjectsHome')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionDiwaliPage">
+        <div class="top-section">
+            <h1 class="top-section-heading ">Celebrate Diwali with your friends</h1>
+        </div>
+        <div class="bottom-section">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="card-items">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="card-image" />
+                    <h1 class="card-heading">Diwali Lamp</h1>
+                    <p class="card-price">Rs.369</p>
+                </div>
+
+                <div class="card-items">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="card-image" />
+                    <h1 class="card-heading">Diya</h1>
+                    <p class="card-price">Rs.100</p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-center">
+                <div class="card-items">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="card-image" />
+                    <h1 class="card-heading">Sparklers</h1>
+                    <p class="card-price">Rs.150</p>
+                </div>
+                <div class="card-items">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="card-image" />
+                    <h1 class="card-heading">Fire Cracker</h1>
+                    <p class="card-price">Rs.50</p>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="display('sectionAdvancedTechnologyPage')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionMoviePage">
+        <div class="movie-bg-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c1-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c2-img.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/nemo-c3-img.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="movie-heading-container d-flex flex-row justify-content-between">
+                <h1 class="movie-name">Finding Nemo</h1>
+                <button class="movie-button">Watch Now</button>
+            </div>
+            <p class="Movie-Description">
+                A clown fish,is overly cautious with his son, Nemo who has a foreshortened fin. When Nemo swims too close to the surface to prove himself, he is caught by a diver, and horrified Marlin must set out to find him. A blue reef fish named Dory joins Marlin and complicates the encounters with sharks,jellyfish, and a host of oceandangers. Meanwhile, Nemo plots his escape from a dentist's fish tank.
+            </p>
+            <h1 class="movie-sub-heading">Similar Movies</h1>
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/finding-dory-img.png" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/bugslife-img.png" class="movie-other-image" />
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/ratatouille-movie-img.png" />
+            <div class="d-flex flex-column justify-content-end">
+                <button class="btn btn-primary page-button" onclick="display('sectionDiwaliPage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionNewsPaperPage">
+        <div class="news-bg-container d-flex flex-column justify-content-end">
+            <div class="card-container">
+                <p class="paragraph">News of the day</p>
+                <h1 class="main-heading">All educational institutions in Assam to reopen from Navember 2</h1>
+                <p class="paragraph">Uttar Pradesh's Gautam Buddh Nagar recorded 107 new Covid-19 cases on Saturday,pushing the district'S infection tally to 15,803.official data showed.The number of active cases came down further to 1,384 from 1,477 on Friday and 1,523 on Thursday, according to the data released by the Up Health Department fora 24-hour period</p>
+                <button class="button">Read more</button>
+                <button class="btn btn-primary" onclick="display('sectionMoviePage')">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>ta
